@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+   
+}
+
+.form {
+    margin-top: -10px;
+}
+
+.form-group {
+    width: 880px;
+
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0px;
+       
+}
+
+.form-group1{
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding-bottom: 35px;
+}
+
+.containerContact{
+    background-color: #ffffff;
+    margin-top: -20px;
+}
+
+hr {
+    border-color: rgb(216, 212, 212);
+    width: 94%;
+    position: relative;
+    margin-top: -20px;
+    
+}
+
+@media screen and (max-width:980px) {
+    .Name{
+       margin-left: 70px;
+    }
+}
