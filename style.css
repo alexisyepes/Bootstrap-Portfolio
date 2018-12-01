@@ -1,293 +1,199 @@
-* {
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: grey;
-   
-}
-
-header {background-color: #ffffff;
-     margin-top: 00px;
-     margin-left: 0px;
-     width: 100%;
-     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-     color: #777777; 
-     padding: 30px; 
-     padding-left: 970px;   
-     font-weight: bold;
-     border-bottom: 1.5px solid #cccccc;
-
-}
-
-.pic1 {
-    width: 250px;
-    height:250px;
-    margin-left: 20px;
-    margin-right: 20px;
-    float: left;
-}
-
-.paragraph {
-    line-height: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.form {
-    margin-top: -10px;
-}
-
-.form-group {
-    width: 880px;
-
-    background-color: #ffffff;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 0px;
-       
-}
-
-.form-group1{
-    width: 880px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    padding-bottom: 35px;
-}
-
-.containerContact{
-    background-color: #ffffff;
-    margin-top: -20px;
-}
-
-hr {
-    border-color: rgb(216, 212, 212);
-    width: 96%;
+/* --- STYLES FOR ALL PAGES --- */
+body {
+    /* Typography */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  
+    /* Visual */
+    background-image: url("images/texture.png");
+  }
+  
+  html {
+    /* Positioning */
     position: relative;
-    margin-top: -20px;
-    
-}
+  
+    /* Box-model */
+    min-height: 100%;
+  }
+  
+  /* add space for fixed nav */
+  main {
+    margin: 80px 0;
+  }
+  
+  /* create styles for use for all white main boxes */
+  .block {
+    background-color: #fff;
+  
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .block-header {
+    /* Typography */
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+  }
+  
+  /* NAV START */
+  #logo {
+    font-family: Georgia, Times, "Times New Roman", serif;
+  
+    /* Typography */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  
+    /* Visual */
+    background: #4aaaa5;
+  }
+  
+  /* override bootstrap hover color and border */
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #4aaaa5;
+  }
+  
+  .navbar {
+    background: white;
+    border: none;
+  }
 
-.col-md-4 {
-    margin: 20px;
-}
-
-#linePortfolio {
-    height: 1px;
-    margin-top: -20px;
-    border-color: rgb(216, 212, 212);
-    width: 860px;
-}
-
-@media screen and (max-width:980px) {
+  .btn1,.btn2,.btn3,.btn4,.btn5 {
+      font-size: 30px !important;
+      width: 100%;
+      height: 75px;
+      margin-top: -85px;
+      background: #4aaaa5;
+      color: #fff;
 
 
-    header {
-        padding-left: 620px;
-    }    
+  }
 
-    #name {
-        margin-left: -163px;
+
+  
+  
+  /* media query for nav background color change */
+  @media only screen and (max-width: 767px) {
+    .navbar-header {
+      background-color: #4aaaa5;
     }
-
-    #linePortfolio {
-        width: 620px;
-        background-color: #ffffff;
-
-    }
-
-    .col-md-5 {
-        width: 100px;
-        height: 80px;
-        margin: 20 20 20 20;
-        background-color: #ffffff;
-    }
-     
-    .col-md-4 {
-        margin-left: 125px;
-        background-color: #ffffff;
-        padding-right: 200px;
-           
-    }
-
-    #cont3 {
-        margin-right: 400px;
-        width: 500px;
-        }
-
-    #cont6 {
-        background-color: #ffffff;
-
-    }
-
-    #cont7 {
-        padding-bottom: 250px;
-    }
-
-    .containerContact {
-        padding-left: 20px;
-        padding-right: 200px;
-        width: 765px;
-        margin-right: 60px;
-    }
-
-    #form1 {
-        width: 745px;
-        padding-right: 20px;
-    }
-
-    #form2 {
-        width: 745px;
-        padding-right: 20px;
-        padding-top: 30px;
-        margin-top: -16px;
-    }
-
-    #form3 {
-        padding-right: 20px;
-
-    }
-
-    #form4 {
-        width: 745px;
-        padding-right: 20px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    #name {
-        font-size: 20px;
-        margin-left: -280px;
-    }
-
-    header {
-        padding-left: 485px;
-    }
-
-    #cont1 {
-        width: 768px;
-        margin-left: -25px;
-        margin-right: auto;
-        padding-right: 30px;
-    }
-
-    #cont2 {
-        width: 708px;
-        margin-left: -10px;
-        padding-right: 10px;
-    }
-
-    #contactTitle {
-        width: 100%;
-        margin-top: 70px;
-        margin-left: -35px;
-    }
-
-    .containerContact {
-        width: 800px;
-        margin-top: 70px;
-        margin-left: -35px;
-
-    }
-
-}
-
-
-@media screen and (max-width: 640px) {
-    #name {
-        position: relative;
-        z-index: 0;
-        margin-top: -110px;
-        margin-left: -100px;
-        width: 100%;
-
-    }
-
-    header {
-        padding-left: 240px;
-        position: relative;
-        left: 0;
-        margin-top: 100px;
-        width: 800px;
-        text-align: center;
-        font-size: 25px;
-    }
- 
-    #cont1 {
-        margin-top: 100px;
-    }
-
-    .pic1 {
-        width: 620px;
-        height: 600px;
-        clear: both;
-        margin-bottom: 20px;
-    }
-
-    .paragraph {
-        font-size: 25px;
-        line-height: 35px;
-    }
-
-}
-
-@media screen and (max-width: 360px) {
-    #name {
-        position: relative;
-        z-index: 0;
-        margin-top: -110px;
-        margin-left: -100px;
-        width: 100%;
-
-    }
-
-    header {
-        padding-left: 240px;
-        position: relative;
-        left: 0;
-        margin-top: 100px;
-        width: 1000px;
-        text-align: center;
-        font-size: 25px;
-    }
- 
-    #cont1 {
-        margin-top: 100px;
-        width: 960px;
-        margin-left: -10px;
-        margin-right: px;
-    }
-
-    #cont2 {
-        width: 900px;
-        margin-right: 20px;
-        margin-left: 5px;
-    }
-
-    .pic1 {
-        width: 820px;
-        height: 770px;
-        clear: both;
-        margin-bottom: 20px;
-    }
-
-    .paragraph {
-        font-size: 35px;
-        line-height: 45px;
-    }
-
-    #contactTitle {
-        margin-left: 0px;
-    }
-
-    .containerContact {
-        width: 900px;
-        margin-top: 70px;
-        margin-left: 0px;
-
-    }
-
-}
+  }
+  /* END NAV */
+  
+  
+  /* CONNECT W/ ME CSS */
+  .connect-header {
+    /* Typography */
+    font-size: 25px;
+  }
+  
+  .connect-photo {
+    /* Box-model */
+    width: 55px;
+    height: 55px;
+  }
+  
+  #images {
+    /* Box-model */
+    padding-top: 15px;
+  
+    /* Typography */
+    text-align: center;
+  }
+  /* END CONNECT W/ ME */
+  
+  
+  /* BEGIN FOOTER */
+  .footer {
+    /* Positioning */
+    position: absolute;
+    bottom: 0;
+  
+    /* Box-model */
+    width: 100%;
+    height: 60px;
+  
+    /* Visual */
+    background-color: #666;
+  }
+  
+  .text-muted-footer {
+    /* Box-model */
+    margin-top: 15px;
+  
+    /* Typography */
+    color: #fff;
+  }
+  
+  .two-toned-footer-color {
+    /* Box-model */
+    height: 6px;
+    padding-top: 3px;
+  
+    /* Visual */
+    background-color: #4aaaa5;
+  }
+  /* END FOOTER */
+  /* --- END STYLES FOR ALL PAGES --- */
+  
+  /* --- PAGE-SPECIFIC STYLES --- */
+  /* ABOUT-ME PAGE */
+  .about-me-header {
+    /* Positioning */
+    margin-bottom: 33px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+  
+    /* Typography */
+    font-size: 32px;
+    font-weight: bold;
+    color: #4aaaa5;
+  }
+  
+  #about-image {
+    /* Positioning */
+    float: left;
+  
+    /* Box-model */
+    width: 200px;
+    margin: 0 20px 10px 0;
+  }
+  /* END ABOUT-ME PAGE */
+  
+  
+  /* PORTFOLIO PAGE */
+  .port-image {
+    margin: 20px auto;
+  }
+  /* END PORTFOLIO PAGE */
+  
+  
+  /* CONTACT FORM PAGE  */
+  .form-control {
+    /* give input boxes right angles */
+    border-radius: 0;
+  
+    /* keep from horizontally resizing text area */
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .submit-btn {
+    /* Box-model */
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: lighter;
+  
+    /* Typography */
+    color: #fff;
+  
+    /* Visual */
+    background-color: #4aaaa5;
+    border: 0;
+  }
+  
+  .submit-btn:hover {
+    opacity: .7;
+  }
+  
+  /* END CONTACT FORM PAGE */
+  

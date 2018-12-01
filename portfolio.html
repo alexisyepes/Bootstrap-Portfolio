@@ -1,233 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap-design</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" media="screen">
+
 </head>
-<body style="background-image: url('images/texture.png')">
-       
-                    
-                   <!--Menu Bar-->
-                   <header>
-                        <ul  class="nav nav-pills">
-                         
-                         <a id="menu1" class="nav-link" href="index.html">About</a>
-                                <li class="nav-item">
-                            </li>
-                            <li class="nav-item">
-                              <a id="menu2" class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a id="menu3" class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                    
-                            </ul>
-                     </header>
-                    
-     <!--Name-->
 
-        <div class="container-fluid">
-            <div id="name" class="row">
-                <div class="col-md-6">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand" href="index.html" id="logo">Alexis Yepes Sanabria</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- End of navbar -->
 
-                  <h1 style="font-family: 'Georgia', Times, Times New Roman, serif;
-                    background-color: #4aaaa5;
-                    color: #ffffff;
-                    padding: 32px;
-                    font-size: 33px;
-                    width: 440px;
-                    margin-left: 278px;
-                    margin-right: auto;
-                    margin-top: -105px;
-                    text-align: center;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 0;
-                    ">
-                     Alexis Yepes Sanabria
-                   </h1>
-                 </div>
+  <!-- Start of container -->
+  <div class="container">
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img style="width: 350px; height: 350px;" class="img-fluid port-image" src="images/buisnessbuilding.jpeg" alt="pic 1">
+              <a href="https://alexisyepes.github.io/Word-Guess-Game/" target="_blank" class="btn btn-info btn1" role="button">Word-Guess-Game</a>
 
             </div>
-        </div>
-                     <br>
-                     <br>
-                  
-<!--Portfolio Title-->
-                     <div style="width: 960px;"  class="container">
-                            <div id="cont3"  class="row">
-                                <div class="col-md-12">
-                    
-                                   <h1 style="color: #4aaaa5;
-                                   background-color: #ffffff;
-                                   font-family: 'Georgia', Times, Times New Roman, serif;
-                                   padding-bottom: 50px;
-                                   padding-left: 30px;
-                                   padding-top: 30px;
-                                   padding-right: 735px;
-                                   font-weight: bold;
-                                   font-size: 33px;
-                                   ">Portfolio</h1>
-                    
-                                </div>
-                            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img style="width: 350px; height: 350px;" class="img-fluid port-image" src="images/buisness2.jpeg" alt="pic 2">
+              <a href="#" class="btn btn-info btn1" role="button">RPG Game</a>
 
-                    <div style="background-color: #ffffff;
-                    margin-top: -20px;
-                    padding-top: 10px;
-                    padding-bottom: 50px;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    padding-left: 30px;
-                     " class="container">      
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img style="width: 350px; height: 350px;" class="img-fluid port-image" src="images/businees2.jpeg" alt="pic 3">
+              <a href="#" class="btn btn-info btn1" role="button">Trivia Game</a>
 
-                        <div id="cont4" class="row">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img style="width: 350px; height: 350px;" class="img-fluid port-image" src="images/business3.jpeg" alt="pic 4">
+              <a href="#" class="btn btn-info btn1" role="button">Rutgers Info Widget</a>
 
-                            <div  class="col-md-5">
-                                        
-                  <!--line-->               <hr id="linePortfolio">
-                      
-                                       <br>     
-                    <!--pictures-->       <img style="width: 300px;
-                                             height: 300px;
-                                             "  src="images/buisnessbuilding.jpeg" alt="Business 1">
-                                             <button style="padding-left: 92px;
-                                                            padding-right: 92px;
-                                                            padding-top: 15px;
-                                                            padding-bottom: 15px;
-                                                            font-size: 25px;
-                                                            background-color:#4aaaa5;
-                                                            border-color: #4aaaa5;
-                                                            position: relative;
-                                                            margin-top: -96px;
-                                                            text-align: center;
-                                                            font-weight: bold;
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img style="width: 350px; height: 350px;" class="img-fluid port-image" src="images/business5.jpg" alt="pic 5">
+              <a href="#" class="btn btn-info btn1" role="button">Rock paper scissors</a>
 
-                                                            " type="button" class="btn btn-primary btn-lg">Hangman</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+  <!-- End of container -->
 
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2018 Alexis Yepes Sanabria
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-                                       
-                             </div>
-                                    
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-                             <div class="col-md-4">
-                                 <br>
-                                    <img style="width: 300px;
-                                                height: 300px;
-                                                margin-left: -80px;
-                                                margin-top: -22px;
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
 
-                                             "  src="images/buisness2.jpeg" alt="Business 2">
-                                              <button style="
-                                              padding-left: 87px;
-                                              padding-right: 87px;
-                                              padding-top: 15px;
-                                              padding-bottom: 15px;
-                                              font-size: 25px;
-                                              background-color:#4aaaa5;
-                                              border-color: #4aaaa5;
-                                              position: relative;
-                                              margin-top: -96px;
-                                              margin-left: -80px;
-                                              font-weight: bold;
-                                              text-align: center;
-
-                                              " type="button" class="btn btn-primary btn-lg">RPG Game</button>
-
-                             </div>
-                        </div>  
-                        
-                        <div id="cont7" class="row">
-                            <div class="col-md-5">
-                               <img style="width: 300px;
-                               height: 300px;" src="images/businees2.jpeg" alt="business 3">
-
-                               <button style="
-                               padding-left: 80px;
-                               padding-right: 80px;
-                               padding-top: 15px;
-                               padding-bottom: 15px;
-                               font-size: 25px;
-                               background-color:#4aaaa5;
-                               border-color: #4aaaa5;
-                               position: relative;
-                               margin-top: -96px;
-                               text-align: center;
-                               font-weight: bold;
-
-                               " type="button" class="btn btn-primary btn-lg">Trivia Game</button>
-
-                            </div>
-                            <div id="cont5" class="col-md-4">
-                                    <img style="width: 300px;
-                                    height: 300px;
-                                    margin-left: -80px;
-                                    margin-top: -22px;
-
-                                 "  src="images/business3.jpeg" alt="Business 4">
-                                  <button style="
-                                  padding-left: 29px;
-                                  padding-right: 30px;
-                                  padding-top: 15px;
-                                  padding-bottom: 15px;
-                                  font-size: 25px;
-                                  background-color:#4aaaa5;
-                                  border-color: #4aaaa5;
-                                  position: relative;
-                                  margin-top: -96px;
-                                  margin-left: -80px;
-                                  font-weight: bold;
-                                  text-align: center;
-
-                                  " type="button" class="btn btn-primary btn-lg">Rutgers Info Widget</button>
-
-
-                            </div>
-                            <div id="cont6" class="col-md-5">
-                                    <img style="width: 300px;
-                                    height: 300px;" src="images/business5.jpg" alt="business 5">
-     
-                                    <button style="
-                                    padding-left: 35px;
-                                    padding-right: 35px;
-                                    padding-top: 15px;
-                                    padding-bottom: 15px;
-                                    font-size: 25px;
-                                    background-color:#4aaaa5;
-                                    border-color: #4aaaa5;
-                                    position: relative;
-                                    margin-top: -96px;
-                                    text-align: center;
-                                    font-weight: bold;
-     
-                                    " type="button" class="btn btn-primary btn-lg">Rock paper scissors</button>
-     
-                            </div>
-
-                        </div>
-                        
-                        <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <footer style="background-color: #646262;
-                                        height: 50px;
-                                        width: 100%;
-                                        border-top: 8px solid #4aaaa5;
-                                        position: fixed;
-                                        bottom: 0;
-                                        left: 0;">
-                    
-                                        </footer>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                    </div>                   
 </body>
+
 </html>

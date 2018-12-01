@@ -1,152 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap-design</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" media="screen">
 
 </head>
-<body style="background-image: url('images/texture.png')">
-   
-   <!--Menu Bar-->
-   <header>
-    <ul  class="nav nav-pills">
-     
-     <a id="menu1" class="nav-link" href="index.html">About</a>
-            <li class="nav-item">
-        </li>
-        <li class="nav-item">
-          <a id="menu2" class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a id="menu3" class="nav-link" href="contact.html">Contact</a>
-        </li>
 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="index.html" id="logo">Alexis Yepes Sanabria</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
         </ul>
-    </header>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- End of navbar -->
 
-     <!--Name-->
+  <!-- Start of container -->
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="images/familyselfie.jpg" alt="" id="about-image" />
+          <p> My name is Alexis Yepes Sanabria. I was born in Colombia, a beautiful country that is located in 
+            South America. I grew up in a time when technology was only seen in Hollywood movies or read in sci-fi books. 
+            Nowadays, our lives have been taken over by a single-portable-machine: The Smartphone.</p>
+          <br />
+          <p> I began teaching myself how to play the guitar when I was 6 years old. However, a year later I began 
+            taking guitar lessons until high school. After graduating from high school, I decided to enroll in a music
+            program. However, the computer world was also catching my attention. So after some discussion with my 
+            parents, I made the decision to enroll in a computer programming program back in 2002. 
+            I was enjoying learning about computers (and playing in a Rock Band), when the political climate of 
+            my country forced me to leave. Unfortunately, there was a war going on between the rebels and the 
+            government, where young people were being recruited against their will. As a result, my parents made 
+            me flee Colombia and I ended up living in the USA- the country where I met the person I was going to be 
+            sharing my life with. After a couple of years in the US, we came to Canada, the most beautiful country 
+            in the world. I instantly fell in love with its people, its weather (believe it or not, Winter is my 
+            favourite season), and most of all, its respect for the human being. Many years have passed, I got married, 
+            had children, and now...I'm back in the Computer World. Hell yeah!!!
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- End of container -->
 
-        <div class="container-fluid">
-            <div id="name" class="row">
-                <div class="col-md-7">
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-                  <h1 style="font-family: 'Georgia', Times, Times New Roman, serif;
-                    background-color: #4aaaa5;
-                    color: #ffffff;
-                    padding: 32px;
-                    font-size: 33px;
-                    width: 440px;
-                    margin-left: 278px;
-                    margin-right: auto;
-                    margin-top: -105px;
-                    text-align: center;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 0;
-                    ">
-                     Alexis Yepes Sanabria
-                   </h1>
-                 </div>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-            </div>
-        </div>
-           <br>
-           <br>
-         
-           
-    <!--About Me Title-->
-
-    
-    <div style="width: 960px;"  class="container">
-        <div id="cont1" class="row">
-            <div class="col-md-12">
-
-               <h2 style="color: #4aaaa5;
-               background-color: #ffffff;
-               font-family: 'Georgia', Times, Times New Roman, serif;
-               padding-bottom: 50px;
-               padding-left: 30px;
-               padding-top: 30px;
-               font-weight: bold;
-               font-size: 33px;
-               ">About Me</h2>
-
-            </div>
-        </div>
-        
-        <!--Main Container-->
-
-        <div id="cont2" style="background-color: #ffffff;
-                    margin-top: -20px;
-                    padding-top: 10px;
-                    padding-bottom: 50px;
-
-                    "  class="container-fluid">
-
-            <div class="row">
-
-              <div class="col-md-12">
-                  
-                 <hr class="linePortfolio" style="height: 1px;
-                            margin-top: -20px;
-                            border-color: rgb(216, 212, 212);
-                            ">
-
-                 <br>
-
-                 <img class="pic1" 
-                         src="images/familyselfie.jpg" alt="picture of family">
-
-                 <p class="paragraph">
-                        My name is Alexis Yepes Sanabria. I was born in Colombia, a beautiful country that is located in 
-                        South America. I grew up in a time when technology was only seen in Hollywood movies or read in sci-fi 
-                        books. Nowadays, our lives have been taken over by a single-portable-machine: The Smartphone.
-                        I began teaching myself how to play the guitar when I was 6 years old. However, a year later I began 
-                        taking guitar lessons until high school. After graduating from high school, I decided to enroll 
-                        in a music program. However, the computer world was also catching my attention. So after some 
-                        discussion with my parents, I made the decision to enroll in a computer programming program back in 2002.
-                        I was enjoying learning about computers (and playing in a Rock Band), when the political climate of 
-                        my country forced me to leave. Unfortunately, there was a war going on between the rebels and the 
-                        government, where young people were being recruited against their will. As a result, my parents
-                        made me flee Colombia and I ended up living in the USA- the country where I met the person I was 
-                        going to be sharing my life with. After a couple of years in the US, we came to Canada,
-                         the most beautiful country in the world. I instantly fell in love with its people, its weather 
-                         (believe it or not, Winter is my favourite season), and most of all, its respect for the human being.
-                         Many years have passed, I got married, had children, and now....I'm back in the Computer World. 
-                         Hell yeah!!!
-
-
-                 </p>        
-
-              </div>
-
-            </div>
-
-           
-
-
-
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <footer style="background-color: #646262;
-                    height: 50px;
-                    width: 100%;
-                    border-top: 8px solid #4aaaa5;
-                    position: fixed;
-                    bottom: 0;
-                    left: 0;">
-
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </div>         
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </script>
 </body>
+
 </html>

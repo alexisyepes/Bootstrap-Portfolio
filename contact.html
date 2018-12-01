@@ -1,133 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap-design</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" media="screen">
+
 </head>
-<body style="background-image: url('images/texture.png')">
-    
-                    
-                  <!--Menu Bar-->
-   
-                  <header>
-                      <ul  class="nav nav-pills">
-                       
-                       <a id="menu1" class="nav-link" href="index.html">About</a>
-                              <li class="nav-item">
-                          </li>
-                          <li class="nav-item">
-                            <a id="menu2" class="nav-link" href="portfolio.html">Portfolio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a id="menu3" class="nav-link" href="contact.html">Contact</a>
-                          </li>
-                  
-                          </ul>
-                   </header>
 
-     <!--Name-->
+<body>
 
-        <div class="container-fluid">
-            <div id="name" class="row">
-                <div class="col-md-6">
-
-                  <h1 style="font-family: 'Georgia', Times, Times New Roman, serif;
-                    background-color: #4aaaa5;
-                    color: #ffffff;
-                    padding: 32px;
-                    font-size: 33px;
-                    width: 440px;
-                    margin-left: 278px;
-                    margin-right: auto;
-                    margin-top: -105px;
-                    text-align: center;
-                    font-weight: bold;
-                    position: absolute;
-                    top: 0;
-                    ">
-                     Alexis Yepes Sanabria
-                   </h1>
-                 </div>
-
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand" href="index.html" id="logo">Alexis Yepes Sanabria</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
-             
-          <br>
-          <br>
+        <!-- /.container -->
+      </nav>
+      <!-- End of navbar -->
 
-                     
-                     <div style="width: 960px;"  class="container">
-                            <div class="row">
-                                <div id="contactTitle" class="col-md-12">
-                    
-                                   <h1 style="color: #4aaaa5;
-                                   background-color: #ffffff;
-                                   font-family: 'Georgia', Times, Times New Roman, serif;
-                                   margin-left: 0px;
-                                   margin-bottom: -2px;
-                                   padding-bottom: 50px;
-                                   padding-left: 30px;
-                                   padding-top: 30px;
-                                   padding-right: 735px;
-                                   font-weight: bold;
-                                   font-size: 33px;
-                                   ">Contact</h1>
-                    
-                                </div>
-                            </div>
+  <!-- Start of container -->
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <form class="block form-horizontal">
+          <h1 class="block-header">Contact</h1>
+          <hr />
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="msg">Message</label>
+            <div class="col-sm-10">
+              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- End of container -->
 
-                    <div class="containerContact">
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-                         <hr>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
-                
-                            <form>
-
-                                    
-                                    <div id="form1" class="form-group">
-                                                <label for="exampleFormControlTextarea1">Name</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                              </div>
-                                    <div id="form2" class="form-group">
-                                      <label  for="exampleFormControlInput1">Email</label>
-                                      <input id="form3" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                    </div>
-                                    
-                                    <div id="form4" class="form-group1">
-                                      <label for="exampleFormControlTextarea1">Message</label>
-                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-                                      <br>
-                                      <button style="font-size: 15px; background-color: #4aaaa5; border-color: #4aaaa5; color: #ffffff;"  class="btn better-blue;" type="submit">Submit</button>
-                            
-                            
-                                    </div>
-                                  </form>
-                                  
-                                                                    
-                     </div>
-
-
-                     <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <footer style="background-color: #646262;
-                                    height: 50px;
-                                    width: 100%;
-                                    border-top: 8px solid #4aaaa5;
-                                    position: fixed;
-                                    bottom: 0;
-                                    left: 0;">
-                
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>    
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
 
 </body>
+
 </html>
