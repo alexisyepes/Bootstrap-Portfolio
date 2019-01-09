@@ -30,12 +30,12 @@ event.preventDefault();
   
   $("#flags").empty();
 
-//var name = $("#name-input").val();
+var name = $("#name-input").val();
 
-//const API_KEY = `10161297457820113`;
-// const API_URL = `https://comicvine.gamespot.com/api/volumes/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&format=json&sort=name:asc&filter=name:Walking%20Dead`;
+const API_KEY = `10161297457820113`;
+const API_URL = `https://comicvine.gamespot.com/api/volumes/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&format=json&sort=name:asc&filter=name:Walking%20Dead`;
 
-/* function getCharacterData() {
+  function getCharacterData() {
   return fetch(API_URL)
     .then(response => response.json())
     .then(data => {
@@ -45,7 +45,7 @@ event.preventDefault();
 getCharacterData();*/
 $("#character").empty();
 
-$.ajax({
+/*$.ajax({
     url: queryURL,
     method: "GET"
   }).then(function (response) {
@@ -69,7 +69,7 @@ $.ajax({
   });
 
 
-});
+
    
    </script>
 </body>
