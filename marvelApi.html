@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>Marvel</h1>
-      
-    <form>
-        <input id="name-input"> <button id="find-name">Search</button><br><br><br>
-    </form>
-    <div id="character"></div>
-   <p id="test"></p>
+  <h1>Marvel</h1>
 
-   <script>
-   
-   $("#find-name").on("click", function (event) {
+  <form>
+    <input id="name-input"> <button id="find-name">Search</button><br><br><br>
+  </form>
+  <div id="character"></div>
+  <p id="test"></p>
+
+  <script>
+    alert("hello")
+    $("#find-name").on("click", function (event) {
 
 
-event.preventDefault();
-  
-    var hero = $("#country-input").val();
-  
-    //var queryURL = "https://comicvine.gamespot.com/api/volumes/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&format=json&sort=name:asc&filter=name:Walking%20Dead";
-  
-  $("#flags").empty();
+      event.preventDefault();
 
-var name = $("#name-input").val();
+      //var hero = $("#country-input").val();
 
-const API_KEY = `10161297457820113`;
-const API_URL = `https://superheroapi.com/api/${API_KEY}`;
+      var queryURL = "http://comicvine.gamespot.com/api/characters/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&filter=gender:female";
 
-  function getCharacterData() {
-  return fetch(API_URL)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
+      $("#flags").empty();
+
+      var name = $("#name-input").val();
+
+      //const API_KEY = `2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f`;
+      //const API_URL = `https://comicvine.gamespot.com/api/volumes/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&format=json&sort=name:asc&filter=name:Walking%20Dead`;
+
+      /*  function getCharacterData() {
+        return fetch(API_URL)
+          .then(response => response.json())
+          .then(data => {
+            console.log(data)
+          });
+      }
+      getCharacterData();
+      $("#character").empty();*/
+
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function (response) {
+
+
+        /*for (i=0; i < response.length; i++) {
+          var result = response[i].Image;
+        }
+        
+         // var heroImage = $("<img>").attr("src", result);
+          $("#character").append(heroImage);*/
+
+        $("#test").text(JSON.stringify(response));
+
+
+        //  console.log(response);
+
+      });
     });
-}
-getCharacterData();
-$("#character").empty();
-
-/*$.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-
-
-    /*for (i=0; i < response.length; i++) {
-      var result = response[i].Image;
-    }
-    
-      var heroImage = $("<img>").attr("src", result);
-      $("#character").append(heroImage);*/
-
-      //$("#test").text(JSON.stringify(response));
-      
-      
-      //  console.log(response);
 
 
 
 
-  });
-
-
-
-   
-   </script>
+  </script>
 </body>
+
 </html>
