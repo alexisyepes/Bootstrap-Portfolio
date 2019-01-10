@@ -2,77 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Document</title>
+  <meta charset="utf-8">
+  <title>Favorite heroes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
 
 <body>
-  <h1>ComicVine API</h1>
+  <div class="container">
+    <h1>Character Search</h1>
 
-  <form>
-    <input id="name-input"> <button id="find-name">Search</button><br><br><br>
-  </form>
-  <div id="character"></div>
-  <p id="test"></p>
+    <form id="movie-form">
+      <label for="movie-input">Search for a Character</label>
+      <input type="text" id="movie-input"><br>
 
-  <script>
-    alert("hello")
-    $("#find-name").on("click", function (event) {
+      <input id="find-movie" type="submit" value="Hero Search">
+    </form>
 
+    <div id="movie-view"></div>
 
-      event.preventDefault();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
 
-      //var hero = $("#country-input").val();
+      $("#find-movie").on("click", function (event) {
 
-      var queryURL = "https://cors-escape.herokuapp.com/https://comicvine.gamespot.com/api/characters/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&filter=gender:female";
-
-      $("#flags").empty();
-
-      //var name = $("#name-input").val();
-
-      //const API_KEY = `2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f`;
-      //const API_URL = `https://comicvine.gamespot.com/api/volumes/?api_key=2a74f9bad75a16db7a67f9d5ae0d5544b9d1261f&format=json&sort=name:asc&filter=name:Walking%20Dead`;
-
-      /*  function getCharacterData() {
-        return fetch(API_URL)
-          .then(response => response.json())
-          .then(data => {
-            console.log(data)
-          });
-      }
-      getCharacterData();
-      $("#character").empty();*/
-
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      }).then(function (response) {
+        event.preventDefault();
 
 
-        /*for (i=0; i < response.length; i++) {
-          var result = response[i].Image;
-        }
+        //My method
+
+        // var movie = $("#movie-input").val();
+
+         var queryURL = "https://superheroapi.com/api/10161297457820113/search/batman";
+
+        $.ajax({
+           url: queryURL,
+           method: "GET"
+         }).then(function (response) {
+           $("#movie-view").text(JSON.stringify(response));
+         });
+
+
+        //--------------------------------------------
+
+        //German's method
         
-         // var heroImage = $("<img>").attr("src", result);
-          $("#character").append(heroImage);*/
 
-        $("#test").text(JSON.stringify(response));
+       /* const API_URL = `https://superheroapi.com/api/10161297457820113/332`;
 
-
-        //  console.log(response);
+        function getCharacterData() {
+          return fetch(API_URL)
+            .then(response => response.json())
+            .then(data => {
+              console.log(data)
+            })
+        };
+        getCharacterData();*/
 
       });
-    });
-
-
-
-
-  </script>
+      
+    </script>
+  </div>
 </body>
 
 </html>
