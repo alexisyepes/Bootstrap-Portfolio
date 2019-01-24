@@ -114,7 +114,13 @@ body {
     }
   }
   /* END NAV */
-  
+  #connectBox {
+    width:200px;
+    height: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   /* CONNECT W/ ME CSS */
   .connect-header {
@@ -231,4 +237,14 @@ body {
   }
   
   /* END CONTACT FORM PAGE */
+
+  /*Media Queries for smaller screens*/
+
+  @media only screen and (max-width: 400px) {
+    #connectBox {
+      width:180px;
+      height: 300px;
+      text-align: center;
+    }
+  }
   
