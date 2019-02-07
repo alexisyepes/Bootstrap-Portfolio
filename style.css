@@ -240,7 +240,7 @@ body {
 
   /*Media Queries for smaller screens*/
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 360px) {
     #connectBox {
       width:180px;
       height: 300px;
@@ -248,8 +248,7 @@ body {
     }
 
     #about-image {
-      width: 90px;
-      height: 140px;    
+      width: 100%;
     }
 
   }
