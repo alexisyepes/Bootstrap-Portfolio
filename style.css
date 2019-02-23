@@ -100,10 +100,12 @@ body {
       margin-top: -85px;
       background: #589ac0;
       color: #fff;
-
-
   }
-
+ 
+  #footerText {
+    color: rgb(252, 250, 250);
+    padding-top: 20px;
+  }
 
   
   
