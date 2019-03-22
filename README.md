@@ -1,6 +1,8 @@
 # Bootstrap-Portfolio
 
 Main Portfolio where most of the projects are being added after completion.
+Link to Portfolio Page live: 
+https://alexisyepes.github.io/Bootstrap-Portfolio/
 
 
 Links to some of my projects:
