@@ -12,7 +12,10 @@
   <!-- Boostrap Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-  <!-- Our own CSS stylesheet -->
+  <!-- Fonts Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <!-- My own CSS stylesheet -->
   <link rel="stylesheet" href="style.css" media="screen">
 
 </head>
@@ -31,13 +34,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="nav-link active contactMenu" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link portfolioMenu" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
+                <a class="nav-link aboutMenu" href="index.html">About</a>
               </li>
             </ul>
           </div>
@@ -50,31 +53,13 @@
   <!-- Start of container -->
   <main class="container">
     <section class="row">
-      <div class="col-md-8">
-        <form class="block form-horizontal">
-          <h1 class="block-header">Contact</h1>
-          <hr />
-          <div class="form-group">
-            <label for="name" class="col-sm-2 control-label">Name</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="name" placeholder="Name">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email" class="col-sm-2 control-label">Email</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="email" placeholder="Your Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="msg">Message</label>
-            <div class="col-sm-10">
-              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <button class="submit-btn">Submit</button>
-          <p id="email"><u>alexisyep@gmail.com</u></p>
-        </form>
+      <div class="col-md-8" id="contact-box">
+        <h1 id="contact-box-title">Contact Info</h1>
+        <hr>
+        <h2 id="emailAddress"><i class="fas fa-envelope"></i>
+          <i>alexisyep@gmail.com</i></h2>
+        <h2><i class="fas fa-phone-square"></i>
+          (905) 299-2366</h2>
       </div>
       <div class="col-md-3" id="connectBox">
           <h3><b>Connect with me</b></h3>
