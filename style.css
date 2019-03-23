@@ -60,6 +60,10 @@ body {
     margin-top: 35px;
     margin-bottom: 35px;
   }
+
+  #resumePdf {
+    margin-top: 20px;
+  }
   
   #about-image {
     width: 180px;
